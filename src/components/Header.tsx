@@ -5,8 +5,12 @@ const Header = () => {
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-foreground">
-            Posible
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/f0929ada-f36d-4a35-9dc7-5983b2e2987a.png" 
+              alt="Posible Logo" 
+              className="h-10 w-auto"
+            />
           </div>
           
           <div className="hidden md:flex items-center space-x-8">

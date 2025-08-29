@@ -13,24 +13,25 @@ const HeroSection = () => {
         />
       </div>
       
-      {/* Curved line decoration */}
-      <div className="absolute top-1/3 right-0 w-96 h-96 opacity-10">
-        <svg viewBox="0 0 400 400" className="w-full h-full">
-          <path
-            d="M 50 200 Q 200 50 350 200 Q 200 350 50 200"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            className="text-foreground"
-          />
-        </svg>
+      {/* Dotted circle decoration inspired by logo */}
+      <div className="absolute inset-0 overflow-hidden opacity-10">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <svg width="800" height="800" viewBox="0 0 800 800" className="text-primary">
+            <defs>
+              <pattern id="dots" patternUnits="userSpaceOnUse" width="20" height="20">
+                <circle cx="10" cy="10" r="2" fill="currentColor" />
+              </pattern>
+            </defs>
+            <circle cx="400" cy="400" r="300" fill="none" stroke="url(#dots)" strokeWidth="60" />
+          </svg>
+        </div>
       </div>
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-            Your Virtual COO
-            <span className="block text-primary">in Your Pocket</span>
+          <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
+            <span className="text-foreground">Your Virtual</span>
+            <span className="block text-primary">COO in Your Pocket</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
