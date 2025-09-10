@@ -7,7 +7,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/f0929ada-f36d-4a35-9dc7-5983b2e2987a.png?v=2" 
+              src="/lovable-uploads/1c0deaff-28dc-470f-a8c4-7b2b56ebce0d.png" 
               alt="Posible Logo" 
               className="h-10 w-auto"
             />
