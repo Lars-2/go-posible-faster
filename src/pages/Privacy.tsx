@@ -17,11 +17,6 @@ const Privacy = () => {
             </p>
           </div>
 
-          <div className="mb-12 p-6 bg-muted rounded-lg">
-            <p className="text-sm">
-              <strong>Important Notice:</strong> This document is a comprehensive draft intended to help Posible publish website terms that are clear to users and protective of the company. It is not legal advice. Before publishing, review with licensed counsel and fill in bracketed items.
-            </p>
-          </div>
 
           <div className="prose prose-lg max-w-none">
             {/* Terms of Service */}
