@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroAbstract from "@/assets/hero-abstract.jpg";
+import aiBrainHero from "@/assets/ai-brain-hero.jpg";
 
 const HeroSection = () => {
   return (
@@ -7,8 +7,8 @@ const HeroSection = () => {
       {/* Abstract background image */}
       <div className="absolute inset-0 opacity-20">
         <img 
-          src={heroAbstract} 
-          alt="" 
+          src={aiBrainHero} 
+          alt="AI brain neural network visualization" 
           className="w-full h-full object-cover"
         />
       </div>
