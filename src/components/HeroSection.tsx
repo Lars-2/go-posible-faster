@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import aiBrainHero from "@/assets/ai-brain-hero.jpg";
+import WaitlistDialog from "@/components/WaitlistDialog";
 
 const HeroSection = () => {
+  const [waitlistOpen, setWaitlistOpen] = useState(false);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-primary overflow-hidden">
       {/* Abstract background image */}
@@ -40,10 +44,15 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" variant="hero">
+            <Button size="lg" variant="hero" onClick={() => setWaitlistOpen(true)}>
               Join the Waitlist
             </Button>
-            <Button variant="outline" size="lg" className="px-8 py-4 text-lg">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="px-8 py-4 text-lg"
+              onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               See How It Works
             </Button>
           </div>
@@ -53,6 +62,8 @@ const HeroSection = () => {
           </p>
         </div>
       </div>
+      
+      <WaitlistDialog open={waitlistOpen} onOpenChange={setWaitlistOpen} />
     </section>
   );
 };
