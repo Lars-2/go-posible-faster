@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import WaitlistDialog from "@/components/WaitlistDialog";
 
 const Header = () => {
+  const [waitlistOpen, setWaitlistOpen] = useState(false);
+
   return (
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="container mx-auto px-6 py-4">
@@ -26,11 +30,13 @@ const Header = () => {
             </a>
           </div>
           
-          <Button variant="hero">
+          <Button variant="hero" onClick={() => setWaitlistOpen(true)}>
             Join Waitlist
           </Button>
         </div>
       </nav>
+      
+      <WaitlistDialog open={waitlistOpen} onOpenChange={setWaitlistOpen} />
     </header>
   );
 };
