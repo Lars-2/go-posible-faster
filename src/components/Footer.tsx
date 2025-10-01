@@ -38,7 +38,6 @@ const Footer = () => {
               <ul className="space-y-2 text-background/80">
                 <li><a href="#features" className="hover:text-background transition-colors">Features</a></li>
                 <li><a href="#how-it-works" className="hover:text-background transition-colors">How It Works</a></li>
-                <li><a href="#" className="hover:text-background transition-colors">Pricing</a></li>
                 <li><a href="#" className="hover:text-background transition-colors">Integrations</a></li>
               </ul>
             </div>
@@ -47,7 +46,7 @@ const Footer = () => {
               <h3 className="font-semibold mb-4">Company</h3>
               <ul className="space-y-2 text-background/80">
                 <li><a href="#vision" className="hover:text-background transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-background transition-colors">Blog</a></li>
+                <li><a href="/opt-in" className="hover:text-background transition-colors">Opt-In</a></li>
                 <li><a href="#" className="hover:text-background transition-colors">Contact</a></li>
                 <li><a href="/privacy" className="hover:text-background transition-colors">Privacy</a></li>
               </ul>
