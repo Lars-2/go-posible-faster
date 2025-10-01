@@ -29,7 +29,7 @@ const Footer = () => {
               <div className="flex space-x-4">
                 <div className="text-background/60">Follow us:</div>
                 <a href="#" className="text-background/80 hover:text-background transition-colors">Twitter</a>
-                <a href="#" className="text-background/80 hover:text-background transition-colors">LinkedIn</a>
+                <a href="https://www.instagram.com/posible.inc" target="_blank" rel="noopener noreferrer" className="text-background/80 hover:text-background transition-colors">Instagram</a>
               </div>
             </div>
             
