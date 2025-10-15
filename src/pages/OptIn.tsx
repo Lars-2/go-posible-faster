@@ -165,6 +165,95 @@ const OptIn = () => {
                 </div>
               </div>
             </div>
+
+            {/* Toll-Free Verification Script */}
+            <div className="mt-16 bg-muted/30 border border-border rounded-lg p-8">
+              <h2 className="text-2xl font-bold mb-6 text-center">
+                Toll-Free Verification Script
+              </h2>
+              
+              {/* Sales Rep Script */}
+              <div className="mb-8">
+                <h3 className="text-xl font-semibold mb-4 text-primary">
+                  Sales Rep Script – Verbal Consent Flow
+                </h3>
+                <div className="space-y-4 bg-card p-6 rounded-lg border border-border">
+                  <div>
+                    <p className="font-semibold mb-2">Rep:</p>
+                    <p className="text-muted-foreground">
+                      Hi, this is [Rep Name] with Posible, your business intelligence partner. With your permission, we'd like to send you real-time updates and insights for your business by text message. Standard message and data rates may apply. You can reply STOP anytime to unsubscribe, or HELP for assistance. Do I have your consent to enroll you?
+                    </p>
+                  </div>
+                  <div>
+                    <p className="font-semibold mb-2">Customer:</p>
+                    <p className="text-muted-foreground">Yes, you have my consent.</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold mb-2">Rep:</p>
+                    <p className="text-muted-foreground">
+                      Great! To confirm, you're opting in to receive text messages from Posible at this number. You can always reply STOP to cancel or HELP for support. Let's run through an example:
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Example Dialog – Opt-In */}
+              <div className="mb-8">
+                <h3 className="text-xl font-semibold mb-4 text-primary">
+                  Example Dialog – Opt-In
+                </h3>
+                <div className="space-y-4 bg-card p-6 rounded-lg border border-border">
+                  <div>
+                    <p className="font-semibold mb-2">Rep (system simulation):</p>
+                    <p className="text-muted-foreground">
+                      Thanks for joining Posible Alerts! You'll now receive updates and insights for your business. Reply HELP for help, STOP to cancel. Msg & data rates may apply.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="font-semibold mb-2">Customer:</p>
+                    <p className="text-muted-foreground">Sounds good.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Example Dialog – HELP Request */}
+              <div className="mb-8">
+                <h3 className="text-xl font-semibold mb-4 text-primary">
+                  Example Dialog – HELP Request
+                </h3>
+                <div className="space-y-4 bg-card p-6 rounded-lg border border-border">
+                  <div>
+                    <p className="font-semibold mb-2">Customer:</p>
+                    <p className="text-muted-foreground">HELP</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold mb-2">System Reply:</p>
+                    <p className="text-muted-foreground">
+                      Posible Alerts: You're subscribed to receive business updates and insights. Reply STOP to cancel. For further support, visit posible.ai/support or call [support phone].
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Example Dialog – Opt-Out */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4 text-primary">
+                  Example Dialog – Opt-Out
+                </h3>
+                <div className="space-y-4 bg-card p-6 rounded-lg border border-border">
+                  <div>
+                    <p className="font-semibold mb-2">Customer:</p>
+                    <p className="text-muted-foreground">STOP</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold mb-2">System Reply:</p>
+                    <p className="text-muted-foreground">
+                      Posible Alerts: You have successfully unsubscribed and will no longer receive messages. Reply START to rejoin.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
